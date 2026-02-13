@@ -116,6 +116,9 @@ services:
       - 5601:5601
     environment:
       KIBANA_SYSTEM_PASSWORD: ${KIBANA_SYSTEM_PASSWORD:-}
+      KIBANA_SECURITY_KEY: ${KIBANA_SECURITY_KEY:-}
+      KIBANA_SAVED_OBJECTS_KEY: ${KIBANA_SAVED_OBJECTS_KEY:-}
+      KIBANA_REPORTING_KEY: ${KIBANA_REPORTING_KEY:-}
     networks:
       - elk
     depends_on:
